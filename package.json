@@ -1,0 +1,25 @@
+{
+  "name": "nightwatchreporting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "cd ./tests && tsc --outDir ../out && npm run test",
+    "test": "npx nightwatch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/nightwatch": "^1.3.4",
+    "chromedriver": "^97.0.4",
+    "nightwatch": "^1.7.1",
+    "nightwatch-allure": "^1.2.0",
+    "nightwatch-html-reporter": "^2.0.6"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.17.2",
+    "fs": "^0.0.1-security",
+    "handlebars": "^4.7.7",
+    "path": "^0.12.7"
+  }
+}
